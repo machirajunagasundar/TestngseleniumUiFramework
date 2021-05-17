@@ -1,0 +1,168 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "gtms": {
+          "type": "array",
+          "items": {}
+        },
+        "ltms": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "poolName": {
+                  "type": "null"
+                },
+                "availabilityStatus": {
+                  "type": "string"
+                },
+                "port": {
+                  "type": "integer"
+                },
+                "currentConnections": {
+                  "type": "integer"
+                },
+                "maximumConnections": {
+                  "type": "integer"
+                },
+                "isProduction": {
+                  "type": "boolean"
+                },
+                "deviceIp": {
+                  "type": "string"
+                },
+                "partition": {
+                  "type": "null"
+                },
+                "poolMembers": {
+                  "type": "array",
+                  "items": {}
+                }
+              },
+              "required": [
+                "name",
+                "poolName",
+                "availabilityStatus",
+                "port",
+                "currentConnections",
+                "maximumConnections",
+                "isProduction",
+                "deviceIp",
+                "partition",
+                "poolMembers"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "poolName": {
+                  "type": "string"
+                },
+                "availabilityStatus": {
+                  "type": "string"
+                },
+                "port": {
+                  "type": "integer"
+                },
+                "currentConnections": {
+                  "type": "integer"
+                },
+                "maximumConnections": {
+                  "type": "integer"
+                },
+                "isProduction": {
+                  "type": "boolean"
+                },
+                "deviceIp": {
+                  "type": "string"
+                },
+                "partition": {
+                  "type": "string"
+                },
+                "poolMembers": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "sessionStatus": {
+                          "type": "string"
+                        },
+                        "isEnabled": {
+                          "type": "boolean"
+                        },
+                        "monitorStatus": {
+                          "type": "string"
+                        },
+                        "deviceName": {
+                          "type": "string"
+                        },
+                        "ipAddress": {
+                          "type": "string"
+                        },
+                        "port": {
+                          "type": "integer"
+                        },
+                        "connectionCount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "sessionStatus",
+                        "isEnabled",
+                        "monitorStatus",
+                        "deviceName",
+                        "ipAddress",
+                        "port",
+                        "connectionCount"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "name",
+                "poolName",
+                "availabilityStatus",
+                "port",
+                "currentConnections",
+                "maximumConnections",
+                "isProduction",
+                "deviceIp",
+                "partition",
+                "poolMembers"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "gtms",
+        "ltms"
+      ]
+    },
+    "applicationErrors": {
+      "type": "array",
+      "items": {}
+    }
+  },
+  "required": [
+    "data",
+    "applicationErrors"
+  ]
+}
